@@ -64,7 +64,7 @@
               Koinwise Africa
             </h1>
             <p class="mt-4 text-lg md:text-xl text-gray-600">
-              Unlocking the next frontier of digital finance.
+              Unlocking the next frontier of digital finance in Africa.
             </p>
           </div>
         </section>
@@ -81,28 +81,16 @@
           <div class="flex flex-col gap-6 text-gray-600">
             <div class="bg-gray-50 p-6 rounded-lg">
               <h4 class="font-semibold text-2xl text-gray-800 mb-2">
-                Limited to No DeFi Access for Everyday People/Currency
-                Devaluation
+                DeFi Exclusion & Currency Devaluation
               </h4>
               <p>
-                Everyday individuals with basic financial literacy, who are
-                comfortable using a banking app, are excluded from profitable
-                crypto opportunities. While they hold fiat savings that are
-                vulnerable to inflation, they lack accessible pathways to engage
-                in sustainable crypto strategies in DeFi.
+                Across Africa, individuals comfortable using a banking app are
+                excluded from profitable DeFi opportunities. While they hold
+                fiat savings that are eroded by inflation and devaluation, they
+                lack accessible pathways to save and earn with DeFi strategies.
               </p>
             </div>
-            <div class="bg-gray-50 p-6 rounded-lg">
-              <h4 class="font-semibold text-2xl text-gray-800 mb-2">
-                Inefficiencies in Cross-Border Payments and Remittances
-              </h4>
-              <p>
-                Sending and receiving diaspora remittances or making
-                cross-border payments across Africa remains slow, expensive, and
-                unreliable. Traditional banking rails impose high transfer fees,
-                long settlement times, and currency conversion barriers.
-              </p>
-            </div>
+
             <div class="bg-gray-50 p-6 rounded-lg">
               <h4 class="font-semibold text-2xl text-gray-800 mb-2">
                 Barriers in Existing Crypto Onboarding Channels
@@ -113,6 +101,31 @@
                 fees, fraud risks, complex onboarding, and reliance on
                 third-party custody discourage both beginners and experienced
                 users from participating confidently.
+              </p>
+            </div>
+            <!-- <div class="bg-gray-50 p-6 rounded-lg">
+              <h4 class="font-semibold text-2xl text-gray-800 mb-2">
+                Inefficiencies in Cross-Border Payments and Remittances
+              </h4>
+              <p>
+                Sending and receiving diaspora remittances or making
+                cross-border payments across Africa remains slow, expensive, and
+                unreliable. Traditional banking rails impose high transfer fees,
+                long settlement times, and currency conversion barriers.
+              </p>
+            </div> -->
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <h4 class="font-semibold text-2xl text-gray-800 mb-2">
+                Overwhelming Complexity & Fragmentation in DeFi opportunities
+              </h4>
+              <p>
+                Even after navigating the difficult on-ramps, users face a
+                confusing and fragmented ecosystem. Profitable yield strategies
+                are scattered across hundreds of protocols and multiple
+                blockchains, with no clear way to discover, compare, or vet
+                them. This complexity paralyzes new users, forcing them to
+                either settle for low-yield options, give up entirely, or worse,
+                fall for scams. The promise of DeFi remains out of reach.
               </p>
             </div>
           </div>
@@ -827,8 +840,18 @@
           <!-- Indicators will be generated here -->
         </div>
         <div class="flex items-center space-x-2">
-          <button id="prev-btn"></button>
-          <button id="next-btn"></button>
+          <button
+            id="prev-btn"
+            class="px-4 py-2 text-sm font-medium text-gray-600 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            Previous
+          </button>
+          <button
+            id="next-btn"
+            class="px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700"
+          >
+            Next
+          </button>
         </div>
       </div>
     </div>
@@ -879,7 +902,7 @@
           if (index === slides.length - 1) {
             nextBtn.textContent = "Finish";
           } else {
-            nextBtn.textContent = "";
+            nextBtn.textContent = "Next";
           }
 
           currentSlide = index;
