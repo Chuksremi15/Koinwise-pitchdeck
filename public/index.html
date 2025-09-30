@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pitch Deck Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .slide {
+        display: none;
+        min-height: 80vh; /* Make slides take up most of the viewport height */
+      }
+      .slide.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      /* Simple fade transition */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .slide.active {
+        animation: fadeIn 0.5s ease-in-out;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-2"
+  >
+    <div
+      id="pitch-deck-container"
+      class="w-full max-w-5xl bg-white rounded-none overflow-hidden"
+    >
+      <div class="p-8 md:p-12">
+        <!-- Slide 1: Title -->
+
+        <section class="slide active">
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-indigo-600 p-1 rounded-xl mx-auto mb-6 flex items-center justify-center"
+            >
+              <img
+                src="images/favicon.png"
+                alt="Koinwise Africa Logo"
+                class="w-full h-full"
+              />
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-900">
+              Koinwise Africa
+            </h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-600">
+              Unlocking the next frontier of digital finance.
+            </p>
+          </div>
+        </section>
+
+        <!-- Slide 2: The Problem -->
+        <section class="slide">
+          <h3 class="text-3xl md:text-4xl font-bold text-indigo-500 mb-6">
+            The Problem
+          </h3>
+
+          <!-- <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            The challenge your customers face is significant.
+          </h3> -->
+          <div class="flex flex-col gap-6 text-gray-600">
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <h4 class="font-semibold text-2xl text-gray-800 mb-2">
+                Limited to No DeFi Access for Everyday People/Currency
+                Devaluation
+              </h4>
+              <p>
+                Everyday individuals with basic financial literacy, who are
+                comfortable using a banking app, are excluded from profitable
+                crypto opportunities. While they hold fiat savings that are
+                vulnerable to inflation, they lack accessible pathways to engage
+                in sustainable crypto strategies in DeFi.
+              </p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <h4 class="font-semibold text-2xl text-gray-800 mb-2">
+                Inefficiencies in Cross-Border Payments and Remittances
+              </h4>
+              <p>
+                Sending and receiving diaspora remittances or making
+                cross-border payments across Africa remains slow, expensive, and
+                unreliable. Traditional banking rails impose high transfer fees,
+                long settlement times, and currency conversion barriers.
+              </p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <h4 class="font-semibold text-2xl text-gray-800 mb-2">
+                Barriers in Existing Crypto Onboarding Channels
+              </h4>
+              <p>
+                Accessing crypto through centralized exchanges (CEXs) or
+                peer-to-peer (P2P) platforms creates significant hurdles. High
+                fees, fraud risks, complex onboarding, and reliance on
+                third-party custody discourage both beginners and experienced
+                users from participating confidently.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 3: The Solution -->
+        <section class="slide">
+          <h2 class="text-sm font-bold uppercase text-indigo-500 mb-2">
+            The Solution
+          </h2>
+          <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            We are building
+          </h3>
+          <p class="text-lg text-gray-600 max-w-3xl">
+            A self-custodial platform for on- and off-ramping, sending and
+            receiving crypto, swapping between cryptocurrencies, and
+            participating in interest-yielding DeFi strategies. Removing common
+            onboarding barriers, such as the need to save seed phrases or hold
+            native tokens for gas.
+          </p>
+          <h3 class="text-lg md:text-xl text-gray-800 mt-8">
+            With our platform, users can:
+          </h3>
+
+          <div class="flex flex-col text-lg gap-4 mt-4 text-gray-700 max-w-3xl">
+            <p class="text-indigo-800 font-medium">
+              On-ramp and off-ramp crypto directly to and from their local
+              currencies (NGN, KES, ZAR).
+            </p>
+            <p class="text-indigo-800 font-medium">
+              Send stablecoins without needing a native token to pay gas fees(
+              Gasless Transfer ).
+            </p>
+            <p class="text-indigo-800 font-medium">
+              Create a self-custody wallet instantly using Gmail.
+            </p>
+            <p class="text-indigo-800 font-medium">
+              Participate in yield-generating pools such as lending and DEX
+              liquidity pools to passively earn interest
+            </p>
+            <p class="text-indigo-800 font-medium">
+              Take crypto-backed loans (using BTC, ETH, SOL, or other supported
+              assets as collateral) and receive stablecoins instantly.
+            </p>
+            <p class="text-indigo-800 font-medium">
+              Seamlessly swap Stablecoins, Bitcoin, Ethereum, and other tokens
+              across chains while avoiding unnecessary conversion fees.
+            </p>
+          </div>
+        </section>
+
+        <!-- Slide 7: NEW - Product Images -->
+        <section class="slide">
+          <h2 class="text-sm font-bold uppercase text-indigo-500 mb-2">
+            Product Showcase
+          </h2>
+          <!-- <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            Simple, Secure, and Built for Africa.
+          </h3> -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div
+              class="bg-gray-200 rounded-lg h-84 flex items-center justify-center"
+            >
+              <img
+                src="images/buysellswap.png"
+                alt="Koinwise Africa Logo"
+                class="w-full h-full rounded-lg mx-auto mb-6 object-contain"
+              />
+            </div>
+            <div
+              class="bg-gray-200 rounded-lg h-80 flex items-center justify-center"
+            >
+              <img
+                src="images/wallet.png"
+                alt="Koinwise Africa Logo"
+                class="w-full rounded-lg mx-auto mb-6 object-contain"
+              />
+            </div>
+            <div
+              class="bg-gray-200 rounded-lg h-80 flex items-center justify-center"
+            >
+              <img
+                src="images/pools.png"
+                alt="Koinwise Africa Logo"
+                class="w-full rounded-lg mx-auto mb-6 object-contain"
+              />
+            </div>
+            <div
+              class="bg-gray-200 rounded-lg h-80 flex items-center justify-center"
+            >
+              <img
+                src="images/save.png"
+                alt="Koinwise Africa Logo"
+                class="w-full rounded-lg mx-auto mb-6 object-contain"
+              />
+            </div>
+            <div
+              class="bg-gray-200 rounded-lg h-80 flex items-center justify-center"
+            >
+              <img
+                src="images/borrow.png"
+                alt="Koinwise Africa Logo"
+                class="w-full rounded-lg mx-auto mb-6 object-contain"
+              />
+            </div>
+            <div
+              class="bg-gray-200 rounded-lg h-80 flex items-center justify-center"
+            >
+              <img
+                src="images/buy.png"
+                alt="Koinwise Africa Logo"
+                class="w-full rounded-lg mx-auto mb-6 object-contain"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 4: Market Size -->
+        <section class="slide">
+          <h2 class="text-sm font-bold uppercase text-indigo-500 mb-2">
+            Market Snapshot: Crypto in Africa
+          </h2>
+          <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            A rapidly growing, utility-driven market.
+          </h3>
+          <div class="grid md:grid-cols-3 gap-6 text-center">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <h4 class="text-4xl font-bold text-indigo-600">$125B</h4>
+              <p class="font-semibold text-gray-700 mt-2">On-Chain Value</p>
+              <p class="text-sm text-gray-500">
+                (Received in Sub-Saharan Africa, Jul '23 - Jun '24)
+              </p>
+            </div>
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <h4 class="text-4xl font-bold text-indigo-600">#2</h4>
+              <p class="font-semibold text-gray-700 mt-2">
+                Nigeria's Global Rank
+              </p>
+              <p class="text-sm text-gray-500">
+                (In the 2024 Global Crypto Adoption Index)
+              </p>
+            </div>
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <h4 class="text-4xl font-bold text-indigo-600">2.7%</h4>
+              <p class="font-semibold text-gray-700 mt-2">
+                Global Volume Share
+              </p>
+              <p class="text-sm text-gray-500">
+                (Though small, it represents immense growth potential)
+              </p>
+            </div>
+          </div>
+          <p class="text-center mt-6 text-gray-600">
+            Source: Chainalysis 2024 Report
+          </p>
+        </section>
+
+        <!-- Slide 5: NEW - Cross-Border Payments -->
+        <section class="slide">
+          <h2 class="text-sm font-bold uppercase text-indigo-500 mb-2">
+            Use Case: Cross-Border Payments
+          </h2>
+          <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            Stablecoins are transforming remittances.
+          </h3>
+          <div class="flex flex-col md:flex-row gap-8 items-center">
+            <div class="w-full md:w-1/2">
+              <ul class="space-y-4 text-gray-600">
+                <li class="flex items-start">
+                  <span class="text-indigo-500 font-bold text-xl mr-3 mt-1"
+                    >43%</span
+                  >
+                  <div>
+                    <strong class="text-gray-800">Stablecoin Dominance:</strong>
+                    Stablecoins now account for ~43% of the region's total
+                    crypto transaction volume, used extensively for trade and
+                    remittances.
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-indigo-500 font-bold text-xl mr-3 mt-1"
+                    >60%</span
+                  >
+                  <div>
+                    <strong class="text-gray-800">Cheaper Remittances:</strong>
+                    Sending $200 with stablecoins can be up to 60% cheaper than
+                    traditional methods from Sub-Saharan Africa.
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-indigo-500 font-bold text-xl mr-3 mt-1"
+                    >$59B</span
+                  >
+                  <div>
+                    <strong class="text-gray-800">Nigerian Volume:</strong>
+                    Nigeria alone received ~$59B in crypto value (Jul '23 - Jun
+                    '24), with 85% of transfers being retail-sized (<$1M),
+                    showing widespread grassroots adoption.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="w-full md:w-1/2 h-64 bg-gray-50 rounded-lg flex flex-col items-center justify-center p-6 text-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="text-indigo-500 mb-4"
+              >
+                <path
+                  d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"
+                />
+                <path d="m14 12-4-4" />
+                <path d="m10 16 4-4" />
+              </svg>
+              <p class="text-gray-700 font-medium">
+                This is not institutional speculation; it's everyday people and
+                businesses seeking more efficient ways to transact.
+              </p>
+            </div>
+          </div>
+          <p class="text-center mt-6 text-gray-600">
+            Source: Chainalysis 2024 Report
+          </p>
+        </section>
+
+        <!-- Slide 6: NEW - BTC & ETH Holders -->
+        <section class="slide">
+          <h2 class="text-sm font-bold uppercase text-indigo-500 mb-2">
+            Who is Holding?
+          </h2>
+          <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            Bitcoin & Ethereum as essential assets.
+          </h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-indigo-50 p-6 rounded-lg">
+              <h4 class="font-semibold text-indigo-800 text-lg mb-2">
+                A Hedge Against Inflation
+              </h4>
+              <p class="text-indigo-700">
+                With many local currencies depreciating, citizens are turning to
+                Bitcoin as a form of "digital gold" to preserve their savings
+                and store value.
+              </p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <h4 class="font-semibold text-gray-800 text-lg mb-2">
+                Adoption in Nigeria (2022 Data)
+              </h4>
+              <p class="text-gray-600">Among Nigerian crypto investors:</p>
+              <ul class="list-disc list-inside mt-2 text-gray-700">
+                <li><span class="font-bold">76%</span> held Bitcoin (BTC)</li>
+                <li><span class="font-bold">50%</span> held Ethereum (ETH)</li>
+              </ul>
+              <p class="text-sm text-gray-500 mt-2">
+                This shows strong interest in both the primary store of value
+                (BTC) and the leading smart contract platform (ETH).
+              </p>
+            </div>
+          </div>
+          <p class="text-center mt-6 text-gray-600">
+            Source: 2022 report by Invezz
+          </p>
+        </section>
+
+        <!-- Slide 9: NEW - Tech Stack -->
+        <section class="slide">
+          <h2 class="text-sm font-bold uppercase text-indigo-500 mb-2">
+            Technology Stack
+          </h2>
+          <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            Built for scale, security, and reliability.
+          </h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-gray-600">
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <h4 class="font-semibold text-gray-800 mb-3">Frontend</h4>
+              <ul class="space-y-2 text-sm">
+                <li>React Native</li>
+                <li>Next.js (Web)</li>
+                <li>Tailwind CSS</li>
+              </ul>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <h4 class="font-semibold text-gray-800 mb-3">Backend</h4>
+              <ul class="space-y-2 text-sm">
+                <li>Node.js</li>
+                <li>PG SQL</li>
+              </ul>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <h4 class="font-semibold text-gray-800 mb-3">Blockchain</h4>
+              <ul class="space-y-2 text-sm">
+                <li>Ethereum (EVM)</li>
+                <li>Solana</li>
+                <li>Bitcoin Core</li>
+              </ul>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <h4 class="font-semibold text-gray-800 mb-3">Infrastructure</h4>
+              <ul class="space-y-2 text-sm">
+                <li>Biconomy</li>
+                <li>OX</li>
+                <li>Render</li>
+                <li>Vercel</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 5: The Product -->
+        <!-- <section class="slide">
+          <h2 class="text-sm font-bold uppercase text-indigo-500 mb-2">
+            Product
+          </h2>
+          <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            How it works.
+          </h3>
+          <div class="flex flex-col md:flex-row gap-8 items-center">
+            <div class="w-full md:w-1/2">
+              <ul class="space-y-4 text-gray-600">
+                <li class="flex items-start">
+                  <span class="text-indigo-500 mr-3 mt-1">✓</span>
+                  <div>
+                    <strong class="text-gray-800">Feature 1:</strong> Explain a
+                    core feature and the benefit it provides to the user.
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-indigo-500 mr-3 mt-1">✓</span>
+                  <div>
+                    <strong class="text-gray-800">Feature 2:</strong> Detail
+                    another key feature, focusing on how it solves a specific
+                    user pain point.
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-indigo-500 mr-3 mt-1">✓</span>
+                  <div>
+                    <strong class="text-gray-800">Magic Ingredient:</strong>
+                    What is your unique technology or insight that makes this
+                    possible?
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="w-full md:w-1/2 h-64 bg-gray-200 rounded-lg flex items-center justify-center"
+            >
+              <p class="text-gray-500">Product Screenshot / Demo GIF</p>
+            </div>
+          </div>
+        </section> -->
+
+        <!-- Slide 6: Business Model -->
+        <!-- <section class="slide">
+          <h2 class="text-sm font-bold uppercase text-indigo-500 mb-2">
+            Business Model
+          </h2>
+          <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            How we make money.
+          </h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-indigo-50 p-6 rounded-lg">
+              <h4 class="font-semibold text-indigo-800 text-lg mb-2">
+                Pricing Strategy
+              </h4>
+              <p class="text-indigo-700">
+                Describe your model: SaaS (tiered subscription), Transaction
+                Fees, Marketplace, etc. Be specific about pricing.
+              </p>
+              <p class="text-3xl font-bold text-indigo-900 mt-4">$X / month</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <h4 class="font-semibold text-gray-800 text-lg mb-2">
+                Lifetime Value (LTV)
+              </h4>
+              <p class="text-gray-600">
+                Show you understand your unit economics. What is the expected
+                lifetime value of an average customer?
+              </p>
+            </div>
+          </div>
+        </section> -->
+
+        <!-- Slide 7: Traction -->
+        <!-- <section class="slide">
+          <h2 class="text-sm font-bold uppercase text-indigo-500 mb-2">
+            Traction
+          </h2>
+          <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            Our progress so far.
+          </h3>
+          <div class="grid md:grid-cols-3 gap-6 text-center">
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <p class="text-4xl font-bold text-indigo-600">1,000+</p>
+              <p class="font-semibold text-gray-700 mt-2">Users Signed Up</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <p class="text-4xl font-bold text-indigo-600">$10k</p>
+              <p class="font-semibold text-gray-700 mt-2">
+                Monthly Recurring Revenue
+              </p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <p class="text-4xl font-bold text-indigo-600">20%</p>
+              <p class="font-semibold text-gray-700 mt-2">
+                Month-over-Month Growth
+              </p>
+            </div>
+          </div>
+          <div
+            class="mt-8 h-48 bg-gray-200 rounded-lg flex items-center justify-center"
+          >
+            <p class="text-gray-500">"Up and to the right" chart</p>
+          </div>
+        </section> -->
+
+        <!-- Slide 10: Why Now? The Opportunity -->
+        <section class="slide">
+          <h2 class="text-sm font-bold uppercase text-indigo-500 mb-2">
+            Why Now? The Opportunity
+          </h2>
+          <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            A confluence of factors creates a unique opening.
+          </h3>
+          <div class="grid md:grid-cols-3 gap-6 text-center">
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <p class="text-4xl font-bold text-indigo-600">
+                Youthful Population
+              </p>
+              <p class="font-semibold text-gray-700 mt-2">
+                Africa has the youngest population in the world, digitally
+                native and open to new technologies.
+              </p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <p class="text-4xl font-bold text-indigo-600">Mobile First</p>
+              <p class="font-semibold text-gray-700 mt-2">
+                High mobile penetration means solutions can scale quickly
+                without relying on traditional banking infrastructure.
+              </p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <p class="text-4xl font-bold text-indigo-600">Regulatory Thaw</p>
+              <p class="font-semibold text-gray-700 mt-2">
+                While challenges remain, many countries are moving from outright
+                bans towards creating regulatory frameworks.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 11: Competitive Landscape -->
+        <!-- Slide 11: Competitive Landscape -->
+        <section class="slide">
+          <h2 class="text-sm font-bold uppercase text-indigo-500 mb-2">
+            Competitive Landscape
+          </h2>
+          <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            Our Unique Position in the Market.
+          </h3>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <h4 class="font-semibold text-gray-800 mb-2">
+                Local Crypto Exchanges
+              </h4>
+              <p class="text-sm text-gray-600 mb-4">(e.g., Luno, roqqu)</p>
+              <ul class="text-sm space-y-2">
+                <li>
+                  <span class="font-bold text-red-500">Weakness:</span>
+                  Custodial platforms with limited features beyond basic trading
+                  and charges high fees. Users don't control their keys.
+                </li>
+                <li>
+                  <span class="font-bold text-green-500">Our Edge:</span> A
+                  self-custodial wallet created instantly with Gmail. We offer
+                  direct access to DeFi yield, low fee swaps, and crypto-backed
+                  loans.
+                </li>
+              </ul>
+            </div>
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <h4 class="font-semibold text-gray-800 mb-2">P2P Marketplaces</h4>
+              <p class="text-sm text-gray-600 mb-4">(e.g., Bybit P2P)</p>
+              <ul class="text-sm space-y-2">
+                <li>
+                  <span class="font-bold text-red-500">Weakness:</span> Riddled
+                  with fraud risk, scams, and high friction from slow dispute
+                  resolution and payment settlement.
+                </li>
+                <li>
+                  <span class="font-bold text-green-500">Our Edge:</span> A
+                  secure, non-custodial platform that eliminates counterparty
+                  risk and provides an instant, user-friendly on-ramp
+                  experience.
+                </li>
+              </ul>
+            </div>
+            <div class="border border-gray-200 p-6 rounded-lg">
+              <h4 class="font-semibold text-gray-800 mb-2">
+                Traditional Remittance
+              </h4>
+              <p class="text-sm text-gray-600 mb-4">(e.g., Western Union)</p>
+              <ul class="text-sm space-y-2">
+                <li>
+                  <span class="font-bold text-red-500">Weakness:</span>
+                  Extremely high fees, slow settlement times (days), and poor
+                  currency exchange rates.
+                </li>
+                <li>
+                  <span class="font-bold text-green-500">Our Edge:</span>
+                  Near-instant, low-cost transactions where funds can be
+                  immediately deployed into interest-earning DeFi pools.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 8: Team -->
+        <section class="slide">
+          <h2 class="text-sm font-bold uppercase text-indigo-500 mb-2">Team</h2>
+          <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            Our team brings deep technical, industry, and marketing expertise:
+          </h3>
+          <div class="grid md:grid-cols-3 gap-8 text-center">
+            <div>
+              <div
+                class="w-24 h-24 rounded-full bg-gray-300 mx-auto mb-4 overflow-hidden"
+              >
+                <img
+                  src="images/team/remy.png"
+                  alt="Onyedika Emeka"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h4 class="font-bold text-lg text-gray-800">Onyedika Emeka</h4>
+              <p class="text-indigo-600 font-medium">CEO</p>
+              <p class="text-sm text-gray-500 mt-1">
+                Senior fullstack developer and Blockchain Expert – Experienced
+                across multiple blockchains, including EVM-compatible chains,
+                Solana, and Bitcoin, as well as web2 technologies.
+              </p>
+            </div>
+
+            <div>
+              <div
+                class="w-24 h-24 rounded-full bg-gray-300 mx-auto mb-4 overflow-hidden"
+              >
+                <img
+                  src="images/team/teeboy.png"
+                  alt="Onyedika Emeka"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h4 class="font-bold text-lg text-gray-800">Tochi Gabriel</h4>
+              <p class="text-indigo-600 font-medium">Lead Design</p>
+              <p class="text-sm text-gray-500 mt-1">
+                10 years of design Experience Ex lead designer at Donhirr.
+              </p>
+            </div>
+            <div>
+              <div
+                class="w-24 h-24 rounded-full bg-gray-300 mx-auto mb-4 overflow-hidden"
+              >
+                <img
+                  src="images/team/chukwudi.jpeg"
+                  alt="Onyedika Emeka"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h4 class="font-bold text-lg text-gray-800">Chukwudi Nebo</h4>
+              <p class="text-indigo-600 font-medium">Frontend Developer</p>
+              <p class="text-sm text-gray-500 mt-1">
+                Industry Insider – Team member from one of Nigeria’s leading
+                cryptocurrency exchanges, bringing firsthand market knowledge
+                and operational insight.
+              </p>
+            </div>
+            <div>
+              <div
+                class="w-24 h-24 rounded-full bg-gray-300 mx-auto mb-4 overflow-hidden"
+              >
+                <img
+                  src="images/team/george.jpg"
+                  alt="Onyedika Emeka"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h4 class="font-bold text-lg text-gray-800">George Ebuka</h4>
+              <p class="text-indigo-600 font-medium">Lead Marketer</p>
+              <p class="text-sm text-gray-500 mt-1">
+                Marketing Strategist – CEO of BrandBarn, a creative marketing
+                firm, with a track record of building and growing brands in
+                competitive markets.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 9: Competition -->
+        <!-- <section class="slide">
+          <h2 class="text-sm font-bold uppercase text-indigo-500 mb-2">
+            Competition
+          </h2>
+          <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            Our competitive advantage.
+          </h3>
+          <div
+            class="w-full h-80 bg-gray-200 rounded-lg flex items-center justify-center"
+          >
+            <p class="text-gray-500">
+              2x2 Matrix: Your Company in the top right
+            </p>
+          </div>
+          <p class="mt-4 text-center text-gray-600">
+            We have a deep technical understanding of DeFi and firsthand
+            experience with the operational realities of centralized exchanges
+            in emerging markets. This gives us a unique perspective on building
+            solutions that bridge the best of both worlds, the transparency and
+            control of decentralization with the usability and trust signals of
+            centralized systems. Combined with our industry relationships in the
+            Nigerian crypto market and expertise, we can reduce risk for
+            customers, increase confidence, and accelerate adoption faster than
+            other teams
+          </p>
+        </section> -->
+
+        <!-- Slide 10: The Ask -->
+        <section class="slide">
+          <h2 class="text-sm font-bold uppercase text-indigo-500 mb-2">
+            Financials & The Ask
+          </h2>
+          <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            Fueling our next stage of growth.
+          </h3>
+          <div class="text-center">
+            <p class="text-lg text-gray-700">We are raising</p>
+            <p class="text-6xl font-bold text-indigo-600 my-4">$100,000</p>
+            <p class="text-lg text-gray-700">
+              to achieve the following milestones over 6 months:
+            </p>
+          </div>
+          <div class="mt-8 grid md:grid-cols-3 gap-6">
+            <div class="bg-gray-50 p-6 rounded-lg text-center">
+              <h4 class="font-semibold text-gray-800 mb-2">
+                Product Development
+              </h4>
+              <p class="text-gray-600">
+                Launch mobile app and key integrations.
+              </p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg text-center">
+              <h4 class="font-semibold text-gray-800 mb-2">
+                Sales & Marketing
+              </h4>
+              <p class="text-gray-600">
+                Hire sales team and expand marketing channels.
+              </p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg text-center">
+              <h4 class="font-semibold text-gray-800 mb-2">
+                Reach Profitability
+              </h4>
+              <p class="text-gray-600">
+                Achieve $5k MRR and become cash-flow positive.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 11: Contact -->
+        <section class="slide text-center">
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-900">
+            Thank You
+          </h2>
+          <p class="mt-4 text-lg md:text-xl text-gray-600">
+            Let's build the future together.
+          </p>
+
+          <a
+            href="https://Koinwise.vercel.app"
+            class="text-indigo-600 hover:text-indigo-500 text-lg mb-8"
+            >Koinwise webapp</a
+          >
+          <div class="text-lg">
+            <p class="font-semibold text-gray-800">Onyedika Emeka</p>
+            <p class="text-gray-600">Founder & CEO</p>
+            <a
+              href="mailto:email@yourcompany.com"
+              class="text-indigo-600 hover:text-indigo-500"
+              >chuksremi15@gmail.com</a
+            >
+            <p class="text-gray-600">+2348160564759</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- Navigation -->
+      <div
+        class="bg-gray-50 px-8 py-4 flex items-center justify-between border-t"
+      >
+        <div id="slide-indicators" class="flex items-center space-x-2">
+          <!-- Indicators will be generated here -->
+        </div>
+        <div class="flex items-center space-x-2">
+          <button id="prev-btn"></button>
+          <button id="next-btn"></button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const slides = document.querySelectorAll(".slide");
+        const prevBtn = document.getElementById("prev-btn");
+        const nextBtn = document.getElementById("next-btn");
+        const indicatorsContainer = document.getElementById("slide-indicators");
+        let currentSlide = 0;
+
+        // Create slide indicators
+        slides.forEach((_, i) => {
+          const indicator = document.createElement("div");
+          indicator.classList.add(
+            "w-2",
+            "h-2",
+            "rounded-full",
+            "transition-colors",
+            "duration-300",
+            "cursor-pointer"
+          );
+          indicator.classList.add(i === 0 ? "bg-indigo-600" : "bg-gray-300");
+          indicator.addEventListener("click", () => showSlide(i));
+          indicatorsContainer.appendChild(indicator);
+        });
+
+        const indicators = indicatorsContainer.querySelectorAll("div");
+
+        function showSlide(index) {
+          // Hide all slides
+          slides.forEach((slide, i) => {
+            slide.classList.remove("active");
+            indicators[i].classList.remove("bg-indigo-600");
+            indicators[i].classList.add("bg-gray-300");
+          });
+
+          // Show the target slide
+          slides[index].classList.add("active");
+          indicators[index].classList.add("bg-indigo-600");
+          indicators[index].classList.remove("bg-gray-300");
+
+          // Update button states
+          prevBtn.disabled = index === 0;
+          nextBtn.disabled = index === slides.length - 1;
+
+          if (index === slides.length - 1) {
+            nextBtn.textContent = "Finish";
+          } else {
+            nextBtn.textContent = "";
+          }
+
+          currentSlide = index;
+        }
+
+        prevBtn.addEventListener("click", () => {
+          if (currentSlide > 0) {
+            showSlide(currentSlide - 1);
+          }
+        });
+
+        nextBtn.addEventListener("click", () => {
+          if (currentSlide < slides.length - 1) {
+            showSlide(currentSlide + 1);
+          }
+        });
+
+        // Keyboard navigation
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "ArrowRight") {
+            if (currentSlide < slides.length - 1) {
+              showSlide(currentSlide + 1);
+            }
+          } else if (e.key === "ArrowLeft") {
+            if (currentSlide > 0) {
+              showSlide(currentSlide - 1);
+            }
+          }
+        });
+
+        // Initialize the first slide
+        showSlide(0);
+      });
+    </script>
+  </body>
+</html>
